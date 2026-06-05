@@ -1,0 +1,3 @@
+Student Name: Aditi
+Enrollment Number: 00201042025
+College Name: INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN 
