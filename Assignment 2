@@ -1,0 +1,58 @@
+#code 1
+sum = 0
+for i in range(1, 11):
+    sum += i
+
+print("Sum of first 10 natural numbers =", sum)
+#code 2
+n = 5
+fact = 1
+
+for i in range(1, n + 1):
+    fact *= i
+
+print("Factorial of", n, "is", fact)
+#code 3
+n = 10
+a, b = 0, 1
+
+print("Fibonacci Series:")
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+#code 4
+a = 10
+b = 25
+c = 15
+
+if a >= b and a >= c:
+    print("Largest number is:", a)
+elif b >= a and b >= c:
+    print("Largest number is:", b)
+else:
+    print("Largest number is:", c)
+#code 5
+name = "Rahul"
+roll_no = 101
+
+math = 85
+science = 90
+english = 80
+
+total = math + science + english
+percentage = total / 3
+
+print("Name:", name)
+print("Roll No:", roll_no)
+print("Percentage:", percentage)
+
+if percentage >= 90:
+    print("Grade: A+")
+elif percentage >= 75:
+    print("Grade: A")
+elif percentage >= 60:
+    print("Grade: B")
+elif percentage >= 40:
+    print("Grade: C")
+else:
+    print("Grade: Fail")
