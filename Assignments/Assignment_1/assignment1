@@ -1,0 +1,130 @@
+# Find area of a rectangle
+
+length = float(input("Enter length: "))
+breadth = float(input("Enter breadth: "))
+
+area = length * breadth
+
+print("Area of rectangle =", area)
+OUTPUT:
+Enter length: 10
+Enter breadth: 5
+Area of rectangle = 50.0
+
+# Program to calculate Simple Interest
+
+principal = float(input("Enter Principal Amount: "))
+rate = float(input("Enter Rate of Interest: "))
+time = float(input("Enter Time (in years): "))
+
+simple_interest = (principal * rate * time) / 100
+
+print("Simple Interest =", simple_interest)
+OUTPUT:
+Enter Principal Amount: 10000
+Enter Rate of Interest: 5
+Enter Time (in years): 2
+Simple Interest = 1000.0
+
+# Program to convert Celsius to Fahrenheit
+
+celsius = float(input("Enter temperature in Celsius: "))
+
+fahrenheit = (celsius * 9/5) + 32
+
+print("Temperature in Fahrenheit =", fahrenheit)
+
+OUTPUT:
+Enter temperature in Celsius: 25
+Temperature in Fahrenheit = 77.0
+
+# Program to find the average of three numbers
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+average = (num1 + num2 + num3) / 3
+
+print("Average =", average)
+OUTPUT
+
+Enter first number: 10
+Enter second number: 20
+Enter third number: 30
+Average = 20.0
+
+# Program to find the square and cube of a number
+
+num = float(input("Enter a number: "))
+
+square = num ** 2
+cube = num ** 3
+
+print("Square =", square)
+print("Cube =", cube)
+OUTPUT
+Enter a number: 5
+Square = 25.0
+Cube = 125.0
+# Program to swap two numbers without using a temporary variable
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+a, b = b, a
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+
+OUTPUT
+Enter first number: 10
+Enter second number: 20
+
+After swapping:
+a = 20
+b = 10
+
+# --- Student Report Program ---
+
+# Step 1: Take student details using input()
+student_name = input("Enter student name: ")
+roll_number = input("Enter roll number: ")
+
+# Step 2: Store marks in variables
+math_marks = float(input("Enter Mathematics marks (out of 100): "))
+science_marks = float(input("Enter Science marks (out of 100): "))
+english_marks = float(input("Enter English marks (out of 100): "))
+
+# Step 3: Calculate total and percentage
+total_marks = math_marks + science_marks + english_marks
+percentage = (total_marks / 300) * 100
+
+# Step 4: Display the report card output
+print("\n" + "="*30)
+print("       STUDENT REPORT CARD      ")
+print("="*30)
+print(f"Name:        {student_name}")
+print(f"Roll No:     {roll_number}")
+print("-"*30)
+print(f"Total Marks: {total_marks} / 300")
+print(f"Percentage:  {percentage:.2f}%")
+print("="*30)
+
+OUTPUT
+Enter student name: Vidhi Srivastava
+Enter roll number: 101
+Enter Mathematics marks (out of 100): 90
+Enter Science marks (out of 100): 85
+Enter English marks (out of 100): 80
+
+==============================
+       STUDENT REPORT CARD
+==============================
+Name:        Vidhi Srivastava
+Roll No:     101
+------------------------------
+Total Marks: 255.0 / 300
+Percentage:  85.00%
+==============================
