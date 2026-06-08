@@ -1,0 +1,6 @@
+Name,Roll No,Class,Marks
+Aarav Sharma,101,10A,88
+Priya Singh,102,10A,92
+Rohit Verma,103,10B,75
+Sneha Gupta,104,10B,68
+Karan Mehta,105,10C,55

@@ -1,0 +1,78 @@
+#Q1
+sum = 0
+
+for i in range(1, 11):
+    sum = sum + i
+
+print("Sum =", sum)
+
+#Q2
+n = int(input("Enter a number: "))
+
+fact = 1
+
+for i in range(1, n + 1):
+    fact = fact * i
+
+print("Factorial =", fact)
+
+#Q3
+n = int(input("Enter number of terms: "))
+
+a = 0
+b = 1
+
+print("Fibonacci Series:")
+
+for i in range(n):
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
+
+ #Q4
+ a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    largest = a
+elif b >= a and b >= c:
+    largest = b
+else:
+    largest = c
+
+print("Largest number =", largest)
+
+#Q5
+name = input("Enter Student Name: ")
+roll = input("Enter Roll Number: ")
+
+total = 0
+
+for i in range(1, 6):
+    marks = float(input(f"Enter marks of Subject {i}: "))
+    total += marks
+
+percentage = total / 5
+
+if percentage >= 90:
+    grade = "A+"
+elif percentage >= 80:
+    grade = "A"
+elif percentage >= 70:
+    grade = "B"
+elif percentage >= 60:
+    grade = "C"
+elif percentage >= 40:
+    grade = "D"
+else:
+    grade = "F"
+
+print("\n----- RESULT -----")
+print("Name:", name)
+print("Roll No:", roll)
+print("Total Marks:", total)
+print("Percentage:", percentage)
+print("Grade:", grade)
+    
