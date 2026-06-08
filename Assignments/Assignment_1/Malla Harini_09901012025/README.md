@@ -1,3 +1,0 @@
-Malla Harini
-09901012025
-IGDTUW

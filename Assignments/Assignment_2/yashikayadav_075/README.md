@@ -1,3 +1,0 @@
-Student Name: Yashika Yadav
-Enrollment Number: 07501192025
-College Name: IGDTUW

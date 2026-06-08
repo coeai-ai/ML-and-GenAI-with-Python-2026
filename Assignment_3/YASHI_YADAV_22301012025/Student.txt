@@ -1,4 +1,0 @@
-Name: Yashi
-Roll Number: 24
-Course: B.Tech
-Marks: 98

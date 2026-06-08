@@ -1,3 +1,0 @@
-Dhamendari
-02401042025
-IGDTUW

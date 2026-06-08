@@ -1,3 +1,0 @@
-Tanishka Arora
-23701172025
-IGDTUW

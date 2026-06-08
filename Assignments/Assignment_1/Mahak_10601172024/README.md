@@ -1,3 +1,0 @@
--Student Name: Mahak Goswami
--Enrollment Number: 10601172024
--College Name: Indira Gandhi Delhi Technical University for Women

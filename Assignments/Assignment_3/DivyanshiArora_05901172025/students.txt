@@ -1,4 +1,0 @@
------ Student Details -----
-Name: Dorain Smith, Age: 20, Course: Computer Science
-Name: Jane Austen, Age: 22, Course: Mathematics
-Name: Alex Brown, Age: 19, Course: Physics

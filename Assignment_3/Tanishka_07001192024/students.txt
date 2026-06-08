@@ -1,2 +1,0 @@
-Name: Alice, Marks: 90
-Name: Bob, Marks: 85

@@ -1,3 +1,0 @@
-Pahal Rampal
-09601042025
-IGDTUW
