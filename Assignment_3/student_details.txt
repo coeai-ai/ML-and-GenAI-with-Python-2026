@@ -1,0 +1,4 @@
+--- Student Directory ---
+ID: S1001 | Name: Annie | Major: Computer Science | GPA: 3.8
+ID: S1002 | Name: Reiner | Major: Data Science | GPA: 3.5
+ID: S1003 | Name: Berthold | Major: Mathematics | GPA: 3.9
