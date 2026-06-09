@@ -1,0 +1,117 @@
+# func to print first 10 numbers
+def print_10numbers():
+    for i in range(1, 11):
+        print(i)
+
+
+print_10numbers()
+
+# func to print first n natural numbers
+
+
+def print_n_numbers(n):
+    for i in range(1, n+1):
+        print(i)
+
+
+n = int(input("Enter the value of n: "))
+print_n_numbers(n)
+
+# func to reverse a number
+
+
+def reverse_number(num):
+    reversed_num = 0
+    while num > 0:
+        digit = num % 10
+        reversed_num = (reversed_num * 10) + digit
+        num //= 10
+    return reversed_num
+
+
+num = int(input("Enter a number: "))
+print("Reversed number:", reverse_number(num))
+
+# func to count digits in a number
+
+
+def count_digits(num):
+    count = 0
+    while num > 0:
+        num //= 10
+        count += 1
+    return count
+
+
+num = int(input("Enter a number: "))
+print("Number of digits in the number:", count_digits(num))
+
+# func to check if palindrome number or not
+
+
+def is_palindrome(num):
+    original_num = num
+    reversed_num = 0
+    while num > 0:
+        digit = num % 10
+        reversed_num = (reversed_num * 10) + digit
+        num //= 10
+    return original_num == reversed_num
+
+
+num = int(input("Enter a number: "))
+if is_palindrome(num):
+    print(num, "is a palindrome number.")
+else:
+    print(num, "is not a palindrome number.")
+
+# func to generate fibonacci series up to n terms
+
+
+def fibonacci_series(n):
+    a, b = 0, 1
+    series = []
+    for i in range(n):
+        series.append(a)
+        a, b = b, a + b
+    return series
+
+
+n = int(input("Enter the number of terms for Fibonacci series: "))
+print("Fibonacci series:", fibonacci_series(n))
+
+# Calculator using functions that contains user selected operation, program performs calculation and displays result
+
+
+def calculator():
+    print("Select operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+
+    choice = input("Enter choice (1/2/3/4): ")
+
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    if choice == '1':
+        result = num1 + num2
+        print("Result:", result)
+    elif choice == '2':
+        result = num1 - num2
+        print("Result:", result)
+    elif choice == '3':
+        result = num1 * num2
+        print("Result:", result)
+    elif choice == '4':
+        if num2 != 0:
+            result = num1 / num2
+            print("Result:", result)
+        else:
+            print("Error: Division by zero is not allowed.")
+    else:
+        print("Invalid input")
+
+
+calculator()
