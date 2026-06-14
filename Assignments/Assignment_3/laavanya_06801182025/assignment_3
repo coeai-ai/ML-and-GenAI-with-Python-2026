@@ -1,0 +1,81 @@
+# write a function to write first 10 natural number
+def num_10():
+    for i in range (1,11):
+        print(i)
+num_10()
+
+#write a function to calculate sum of first n numbers
+def sum_n(n):
+    sum=0
+    for i in range(1,n+1):
+        sum=sum+i
+    print("the sum of first ",n,"is:",sum)
+n=int(input("enter the number :"))
+sum_n(n)
+#create a function to reverse a number 
+def reverse_num(num):
+    reversed_num = 0
+
+    while num > 0:
+        digit = num % 10
+        reversed_num = reversed_num * 10 + digit
+        num = num // 10
+
+    return reversed_num
+print("The reversed number is:",reverse_num(6789))
+
+#create a function to count digits in a number
+def count_n(num):
+    count = 0
+    while num > 0:
+        count += 1
+        num = num // 10
+
+    return count
+print(count_n(67578))
+
+#write a function to check a number is palindrome or not 
+def palindrome_n(num):
+    num_str = str(num)
+    if num_str == num_str[::-1]:
+        print("the number you entered is plaindrome")
+palindrome_n(17871)
+
+#create a function to generate fibonacci series 
+def fib_n(n):
+    a = 0
+    b = 1
+
+    for i in range(n):
+        print(a, end=" ")
+        c = a + b
+        a = b
+        b = c
+fib_n(10)
+print("\n")
+# create a function for a calculator 
+def calc_n():
+    a=int(input("enter first number:"))
+    b=int(input("enter second number:"))
+    print("enter 1 for addition")
+    print("enter 2 for subtraction")
+    print("enter 3 for multiplication")
+    print("enter 4 for division")
+    n=int(input("enter your choice:"))
+    if n==1:
+        print("the sum of the 2 numbers is:",a+b)
+    if n==2:
+        if a<b:
+            print("the absolute subtraction of 2 numbers is:",abs(a-b))
+        else:
+            print("the subtraction of 2 numbers is:",a-b)
+    if n==3:
+        print("the product of the 2 numbers is",a*b)
+    if n==4:
+        if b==0:
+            print("cannot divide with 0, enter valid number")
+        else:
+            print("the division of the 2 numbers is",a/b)
+    if n not in [1,2,3,4]:
+        print("please enter valid choice")
+calc_n()
