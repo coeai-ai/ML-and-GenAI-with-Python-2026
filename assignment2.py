@@ -1,89 +1,71 @@
-#Find sum of first 10 natural numbers
-sum = 0 
+# Sum of first 10 natural number 
+i = 1
+sum = 0
 for i in range(1,11):
     sum += i
-print(f"The sum of the first 10 natural numbers is: {sum}")   
+print(sum)
 
-#Find factorial of a number
+# Factorial of a number 
+n = int(input("number = "))
+# for find the factorial
+i = 0
 fact = 1
-num = int(input("Enter number for its factorial: "))
-if num == 0:
-   print("The factorial of 0 is 1. ")
-elif num < 0:
-   print("Factorial doesn't exist for negative nunbers.")
+for i in range(n):
+    fact = fact*(n-i)
+print(fact)  
+
+# Fibonacci Series
+n = int(input("number = "))
+a = 0
+b = 1
+for i in range(n):
+    sum = a+b
+    a  = b
+    b = sum 
+    print(sum) 
+
+# Largest among three number
+a = int(input("num a :"))
+b = int(input("num b :"))
+c = int(input("num c :"))
+if(a>=b and a>=c):
+    print("a is largest : ",a)
+elif(b>=a and b>=c):
+    print("b is largest : ",b)
+elif(a == b and a==c):
+    print("all three are equal")    
 else:
-   for i in range(1,num+1):
-    fact = fact*i
-   print(f"The factorial of {num} is : {fact}")
+    print("c is largest : ",c)    
 
+# Creat a Student result system
+Student_name = str(input("Student Name : "))
+Enroll = int(input("Enrollment No : "))
+College = str(input("College : "))
 
-#Print Fibonacci Series
-terms = int(input("How many terms of the Fibonacci series do you want? "))
-n1, n2 = 0, 1  # First two terms
-count = 0
+print("Marks:-")
+sub1 = float(input("Subject 1 : "))
+sub2 = float(input("Subject 2 : "))
+sub3 = float(input("Subject 3 : "))
+sub4 = float(input("Subject 4 : "))
 
-if terms <= 0:
-    print("Please enter a positive integer.")
-elif terms == 1:
-    print(f"Fibonacci series up to {terms} term: {n1}")
+total = sub1+sub2+sub3+sub4
+persentage = (total/400)*100
+
+print("persentage : ",persentage)
+if(persentage >=90):
+    print("Grade A")
+elif(persentage >= 80):
+    print("Grade B")
+elif(persentage >=70):
+    print('Grade C')
+elif(persentage >=60):
+    print('Grade D')    
+elif(persentage >=40):
+    print('Grade E')
 else:
-    print("Fibonacci series:")
-    while count < terms:
-        print(n1, end=" ")
-        nth = n1 + n2
-        n1 = n2
-        n2 = nth
-        count += 1
-    print()  
-
-#Find largest among three numbers
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-c = float(input("Enter third number: "))
-
-if (a >= b) and (a >= c):
-    largest = a
-elif (b >= a) and (b >= c):
-    largest = b
-else:
-    largest = c
-print(f"The largest number among {a}, {b}, and {c} is: {largest}")
+    print("Fail")
 
 
-#Student Result System
-name = input("Enter student name: ")
-roll_no = input("Enter roll number: ")
 
-maths = float(input("Enter marks for Maths: "))
-science = float(input("Enter marks for Science: "))
-english = float(input("Enter marks for English: "))
 
-total_marks = maths + science + english
-
-percentage = (total_marks / 300) * 100
-
-#Grading
-if percentage >= 90:
-    grade = "A+"
-elif percentage >= 80:
-    grade = "A"
-elif percentage >= 70:
-    grade = "B"
-elif percentage >= 60:
-    grade = "C"
-elif percentage >= 50:
-    grade = "D"
-else:
-    grade = "Fail"
-
-# Displaying the generated report card
-print("\n" + "="*30)
-print("        STUDENT RESULT        ")
-print("="*30)
-print(f"Name:        {name}")
-print(f"Roll No:     {roll_no}")
-print("-"*30)
-print(f"Total Marks: {total_marks} ")
-print(f"Percentage:  {percentage:.2f}%")
-print(f"Grade:       {grade}")
-print("="*30)
+  

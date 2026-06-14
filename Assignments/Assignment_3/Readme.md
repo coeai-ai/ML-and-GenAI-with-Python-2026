@@ -1,3 +1,5 @@
-Student Name : Nidhi
-Enrollment no. : 11701172025
-College : Indira Gandhi Delhi Technical University For Women 
+Student Name: Yashika Upadhyay
+
+Enrollment Number: 07401192025
+
+College Name: Indira Gandhi Delhi Technical University for Women (IGDTUW)
