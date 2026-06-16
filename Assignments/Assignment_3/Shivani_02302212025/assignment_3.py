@@ -105,7 +105,7 @@ def calculator():
 
 
 # 8. Student class with name and marks
-class Student:
+class Student: # pylint: disable=too-few-public-methods
     """Represent a student with a name and marks."""
 
     def __init__(self, name, marks):
@@ -184,4 +184,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
