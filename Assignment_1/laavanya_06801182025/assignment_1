@@ -1,0 +1,52 @@
+#find area of rectangle 
+l=int(input("enter the length of the rectangle:"))
+b=int(input("enter the breadth of the rectangle:"))
+area=l*b
+print("the area of the reactangle is:",area)
+
+#find simple interest 
+p=int(input("enter the principle value:"))
+r=int(input("enter the interest rate:"))
+t=int(input("enter the time:"))
+si=p*r*t
+print("the simple interest is:",si)
+
+#convert celsius to fahrenheit
+c=int(input("enter the celsius value:"))
+convert_c_to_f=(c*1.8)+32
+print("AFTER conversion the tempreture is:",convert_c_to_f)
+
+#average of 3 numbers 
+n1=int(input("enter first number:"))
+n2=int(input("enter second number:"))
+n3=int(input("enter third number:"))
+avg_3=(n1+n2+n3)/3
+print("the average value is :",avg_3)
+
+#square and cube of a number
+n4=int(input("enter a number:"))
+sq=n4**2
+cu=n4**3
+print("the square of the number is:",sq)
+print("the cube of the number is:",cu)
+
+#swap to numbers without 3rd variable 
+x=5
+y=7
+x,y=y,x
+print(x,y)
+
+#student report 
+name=input("enter the name of the student:")
+maths=int(input("enter maths marks:"))
+chem=int(input("enter chem marks:"))
+phy=int(input("enter phy marks:"))
+eng=int(input("enter eng marks:"))
+cs=int(input("enter cs marks:"))
+sum_marks=maths+chem+phy+eng+cs #sum of marks
+# max marks is 500 
+percentage_marks=(sum_marks/500)*100 # percentage of the student 
+print("the total marks of the student",name, "is:",sum_marks)
+print("the perecentage of the student", name,"is:",percentage_marks)
+
+

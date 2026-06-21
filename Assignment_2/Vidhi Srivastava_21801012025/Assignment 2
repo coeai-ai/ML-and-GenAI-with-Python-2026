@@ -1,0 +1,125 @@
+1.# Program to find the sum of first 10 natural numbers
+
+sum = 0
+
+for i in range(1, 11):
+    sum += i
+
+print("Sum of first 10 natural numbers =", sum)
+OUTPUT:
+Sum of first 10 natural numbers = 55
+2.# Program to find factorial of a number
+
+num = int(input("Enter a number: "))
+
+factorial = 1
+
+for i in range(1, num + 1):
+    factorial *= i
+
+print("Factorial of", num, "is", factorial)
+OUTPUT:
+Enter a number: 5
+Factorial of 5 is 120
+3.# Program to print Fibonacci series
+
+n = int(input("Enter the number of terms: "))
+
+a, b = 0, 1
+
+print("Fibonacci Series:")
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+OUTPUT:
+Enter the number of terms: 10
+Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34
+
+4.# Program to find the largest among three numbers
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+
+print("The largest number is:", largest)
+OUTPUT:
+Enter first number: 25
+Enter second number: 40
+Enter third number: 15
+The largest number is: 40.0
+
+# 5. Create Student Result System
+#-	Input student details 
+#-	Input marks 
+#-	Calculate percentage 
+#-	Display grade 
+#-	Use: 
+##loops 
+#user input
+# Student Result System
+
+# Input student details
+name = input("Enter student name: ")
+roll_no = input("Enter roll number: ")
+
+# Input marks using a loop
+total_marks = 0
+subjects = ["Mathematics", "Science", "English"]
+
+for subject in subjects:
+    marks = float(input(f"Enter marks in {subject} (out of 100): "))
+    total_marks += marks
+
+# Calculate percentage
+percentage = (total_marks / 300) * 100
+
+# Display grade
+if percentage >= 90:
+    grade = "A+"
+elif percentage >= 80:
+    grade = "A"
+elif percentage >= 70:
+    grade = "B"
+elif percentage >= 60:
+    grade = "C"
+elif percentage >= 50:
+    grade = "D"
+else:
+    grade = "F"
+
+# Display result
+print("\n" + "=" * 35)
+print("      STUDENT RESULT SYSTEM")
+print("=" * 35)
+print("Name       :", name)
+print("Roll No.   :", roll_no)
+print("Total Marks:", total_marks, "/ 300")
+print("Percentage :", round(percentage, 2), "%")
+print("Grade      :", grade)
+print("=" * 35)
+OUTPUT:
+Enter student name: Vidhi Srivastava
+Enter roll number: 101
+Enter marks in Mathematics (out of 100): 92
+Enter marks in Science (out of 100): 88
+Enter marks in English (out of 100): 85
+
+===================================
+      STUDENT RESULT SYSTEM
+===================================
+Name       : Vidhi Srivastava
+Roll No.   : 101
+Total Marks: 265.0 / 300
+Percentage : 88.33 %
+Grade      : A
+===================================
+
